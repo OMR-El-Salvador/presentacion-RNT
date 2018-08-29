@@ -10,6 +10,10 @@
 		<link rel="stylesheet" href="css/theme/solarized.css">
 		<link rel="stylesheet" href="css/user.css">
 
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
+				integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
+				crossorigin="anonymous">
+
 		<link rel="shortcut icon" type="image/png" href="img/favicon.ico" />
 
 		<!-- Theme used for syntax highlighting of code -->
@@ -27,7 +31,31 @@
 	<body>
 		<div class="reveal">
 			<div class="slides">
-				<section class="cover-title" data-background-image="img/cover.jpg"></section>
+				<section class="cover-title" data-background-image="img/cover.jpg">
+					<br /><br /><br /><br />
+					<h3>Gualberto Escalante</h3>
+					<h5>Especialista Informático</h5>
+					<em class="contact-info">
+						<div class="contact-element">
+							<i class="fas fa-envelope"></i>&nbsp;
+							<a href="mailto:gualberto.escalante@omr.gob.sv">gualberto.escalante@omr.gob.sv</a>
+						</div>
+						<div class="contact-element">
+							<i class="fab fa-linkedin"></i>&nbsp;
+							<a href="https://www.linkedin.com/in/gualescalante/">
+								https://www.linkedin.com/in/gualescalante/
+							</a>
+						</div>
+						<div class="contact-element">
+							<i class="fab fa-twitter"></i>&nbsp;
+							<a href="https://twitter.com/gualdsk">@gualdsk</a>
+						</div>
+						<div class="contact-element">
+							<i class="fas fa-phone"></i>&nbsp;+503 2523 4725 &nbsp;&nbsp;&nbsp;
+							<i class="fas fa-mobile"></i>&nbsp;+503 7203 0775
+						</div>
+					</em>
+				</section>
 				<section data-background-image="img/background.jpg">
 					<section><h1>Registro Nacional de Trámites</h1></section>
 					<section>
@@ -117,6 +145,8 @@
 			Reveal.initialize({
 				loop: true,
 				slideNumber: true,
+				pdfSeparateFragments: false,
+				pdfMaxPagesPerSlide: 1,
 				dependencies: [
 					{ src: 'plugin/markdown/marked.js' },
 					{ src: 'plugin/markdown/markdown.js' },

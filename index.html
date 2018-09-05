@@ -32,65 +32,36 @@
 		<div class="reveal">
 			<div class="slides">
 				<section class="cover-title" data-background-size="1440px" data-background-image="img/cover.jpg">
-					<br /><br /><br /><br />
-					<h3>Gualberto Escalante</h3>
-					<h5>Especialista Informático</h5>
-					<em class="contact-info">
-						<div class="contact-element">
-							<i class="fas fa-envelope"></i>&nbsp;
-							<a href="mailto:gualberto.escalante@omr.gob.sv">gualberto.escalante@omr.gob.sv</a>
-						</div>
-						<div class="contact-element">
-							<i class="fab fa-linkedin"></i>&nbsp;
-							<a href="https://www.linkedin.com/in/gualescalante/">
-								https://www.linkedin.com/in/gualescalante/
-							</a>
-						</div>
-						<div class="contact-element">
-							<i class="fab fa-twitter"></i>&nbsp;
-							<a href="https://twitter.com/gualdsk">@gualdsk</a>
-						</div>
-						<div class="contact-element">
-							<i class="fas fa-phone"></i>&nbsp;+503 2523 4725 &nbsp;&nbsp;&nbsp;
-							<i class="fas fa-mobile"></i>&nbsp;+503 7203 0775
-						</div>
-					</em>
 				</section>
 				<section>
 					<section data-background-size="1440px" data-background-image="img/background.jpg">
 						<h1>Registro Nacional de Trámites</h1>
 					</section>
 					<section data-background-size="1440px" data-background-image="img/background.jpg">
-						<p>El catálogo de trámites de la administración pública debidamente publicados en una
-						<strong>plataforma electrónica</strong>, con la información necesaria que los
-						administrados deben conocer para cumplir con sus obligaciones, obtener beneficios o
-						recibir un servicio de manera ágil y sencilla.</p>
-					</section>
-					<section data-background-size="1440px" data-background-image="img/background.jpg">
 						<h2>Objetivos</h2>
 						<ol>
-							<li class="fragment fade-in-then-semi-out">
+							<li data-fragment-index="1" class="fragment">
 								Diseminar la información para el cumplimiento de la regulación (transparencia).
+								&nbsp;<i data-fragment-index="4" class="fragment valid fas fa-check"></i>
 							</li>
-							<li class="fragment fade-in-then-semi-out">
+							<li data-fragment-index="2" class="fragment">
 								Reducir los costos administrativos en las transacciones entre el ciudadano y el
-								gobierno
+								gobierno &nbsp;<i data-fragment-index="5" class="fragment valid fas fa-check"></i>
 							</li>
-							<li class="fragment fade-in-then-semi-out">
+							<li data-fragment-index="3" class="fragment">
 								Otorgar certeza jurídica en la aplicación de la regulación
+								 &nbsp; <i data-fragment-index="6" class="fragment invalid fas fa-times"></i>
 							</li>
 						</ol>
 					</section>
 				</section>
 				<section data-background-size="1440px" data-background-image="img/background.jpg">
 					<h2>Línea de tiempo</h2>
-					<img class="stretch" data-src="img/timelineRNT.jpg" />
+					<iframe src='https://cdn.knightlab.com/libs/timeline3/latest/embed/index.html?source=1GUy6BWrzRX0LffF8rn8YFpbxi4P9k0V2b0k5J3zUuMg&font=Georgia-Helvetica&lang=es&initial_zoom=8&height=550'
+					width='100%' height='650' webkitallowfullscreen mozallowfullscreen allowfullscreen frameborder='0'></iframe>
 				</section>
 				<section>
 					<section data-background-size="1440px" data-background-image="img/background.jpg"><h1>Principios</h1></section>
-					<section data-background-size="1440px" data-background-image="img/background.jpg">
-						<h2 class="fragment highlight-current-red">Un OMR sin papeles</h2>
-					</section>
 					<section data-background-size="1440px" data-background-image="img/background.jpg">
 						<h2>Orientación al usuario</h2>
 						<ul>
@@ -103,6 +74,14 @@
 						</aside>
 					</section>
 					<section data-background-size="1440px" data-background-image="img/background.jpg">
+						<h2>Interoperabilidad</h2>
+						<img class="stretch" src="img/interop.jpg" />
+						<aside class="notes">
+							* Secretaría de transparencia
+							* Sistema de identidad Gubernamental
+						</aside>
+					</section>
+					<section data-background-size="1440px" data-background-image="img/background.jpg">
 						<h2>Mobile first</h2>
 						<em class="fragment roll-in">
 							"<strong class="fragment highlight-current-red">95 %</strong> de los usuarios de Redes
@@ -112,25 +91,12 @@
 						<i class="fragment roll-in">Datos iLifebelt 2018.</i>
 					</section>
 					<section data-background-size="1440px" data-background-image="img/background.jpg">
-						<h2>Separación de intereses</h2>
+						<h2 class="fragment">Búsqueda</h2>
+						<br /><hr /><br />
+						<h2 class="fragment">Categorías</h2>
 					</section>
 					<section data-background-size="1440px" data-background-image="img/background.jpg">
-						<h2>Interoperabilidad</h2>
-						<img class="stretch" src="img/interop.jpg" />
-						<aside class="notes">
-							* Secretaría de transparencia
-							* Sistema de identidad Gubernamental
-						</aside>
-					</section>
-					<section data-background-size="1440px" data-background-image="img/background.jpg">
-						<h2>Desempeño</h2>
-						<img src="img/estandar.jpg" alt="estandar" class="stretch" />
-						<small>
-							<a class="fragment highlight-red"
-									href="https://github.com/egobsv/EstandaresInteroperabilidad">
-								https://github.com/egobsv/EstandaresInteroperabilidad
-							</a>
-						</small>
+						<h2>Campos</h2>
 					</section>
 				</section>
 				<section>
@@ -163,7 +129,9 @@
 					{ src: 'plugin/markdown/marked.js' },
 					{ src: 'plugin/markdown/markdown.js' },
 					{ src: 'plugin/notes/notes.js', async: true },
-					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'reveal-timeline.js', condition: function () { return !!document.querySelector('[data-timeline]'); }
+					}
 				]
 			});
 		</script>

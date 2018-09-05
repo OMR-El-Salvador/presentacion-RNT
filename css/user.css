@@ -16,3 +16,11 @@ body {
   background: #EEE;
   background-color: #EEE;
 }
+
+.valid {
+  color: #95C11F;
+}
+
+.invalid {
+  color: #9D322D;
+}
